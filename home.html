@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ruda:wght@400;500;600;700;800;900&family=Secular+One&family=Teko:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home - Medifind</title>
+  </head>
+  <body>
+    <section class="home-container nav-passive-grid">
+      <nav class="nav">
+        <p class="nav-title hidden">MEDIFIND</p>
+        <ul class="nav-list">
+          <a class="nav-link" href="#"
+            ><li class="nav-element">
+              <box-icon name="home"></box-icon
+              ><span class="nav-text hidden">Home</span>
+            </li></a
+          >
+          <a class="nav-link" href="#"
+            ><li class="nav-element">
+              <box-icon name="plus-medical" class="bx-lg"></box-icon
+              ><span class="nav-text hidden">Pharmacy</span>
+            </li></a
+          >
+          <a class="nav-link" href="#"
+            ><li class="nav-element">
+              <box-icon name="capsule" type="solid"></box-icon
+              ><span class="nav-text hidden">Medicine</span>
+            </li></a
+          >
+          <a class="nav-link" href="#"
+            ><li class="nav-element">
+              <box-icon name="key"></box-icon
+              ><span class="nav-text hidden">Password Change</span>
+            </li></a
+          >
+        </ul>
+      </nav>
+      <div class="content-box">
+        <div class="overlay hidden"></div>
+        <div class="header">
+          <p class="greeter">Welcome Alp Giray</p>
+        </div>
+        <div class="main">
+          <div class="info-section">
+            <div class="info-card pharmacy">
+              <div class="info-image">
+                <img class="icon" src="img/pharmacy.png" alt="" />
+              </div>
+              <div class="info-text">
+                <p class="data data-pharmacy">4356</p>
+                <p class="description">medicines recorded</p>
+              </div>
+            </div>
+            <div class="info-card medicine">
+              <div class="info-image">
+                <img class="icon" src="img/medicine.png" alt="" />
+              </div>
+              <div class="info-text">
+                <p class="data data-medicine">91</p>
+                <p class="description">pharmacies registered</p>
+              </div>
+            </div>
+            <div class="info-card city">
+              <div class="info-image">
+                <img class="icon" src="img/cities.png" alt="" />
+              </div>
+              <div class="info-text">
+                <p class="data data-city">13</p>
+                <p class="description">cities</p>
+              </div>
+            </div>
+          </div>
+          <div class="graph-section">
+            <div class="chart"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
