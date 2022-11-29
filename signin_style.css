@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #efefef;
+}
+.title {
+  margin: 6rem 10rem 10rem 10rem;
+  text-align: center;
+  font-size: 7.5rem;
+  font-family: "Secular One";
+  color: #c81927;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.form-element {
+  all: unset;
+  width: 70rem;
+  border-bottom: 1px solid #888;
+  font-size: 3.5rem;
+  font-family: "Inter";
+}
+
+.button {
+  margin-top: 5rem;
+  height: 6rem;
+  width: 70rem;
+  background-color: #c81927;
+  color: #fdf8ed;
+
+  font-size: 3.5rem;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 16px;
+  filter: drop-shadow(0 4px 2px #787878);
+}
+
+.button:hover,
+.button:active {
+  background-color: #a0141f;
+}

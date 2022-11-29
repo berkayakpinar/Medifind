@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #efefef;
+}
+.active {
+  display: block;
+  transition: all ease-in 1s;
+}
+.hidden {
+  display: none;
+  transition: all ease-in 1s;
+}
+
+.overlay {
+  background-color: #ffffffbf;
+  z-index: 2;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(20px);
+}
+
+.nav-passive-grid {
+  grid-template-columns: 1fr 10fr;
+}
+
+.nav-active-grid {
+  grid-template-columns: 3fr 10fr;
+  transition: all ease 0.2s;
+}
+
+/*BOX DISPLAY*/
+.home-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  transition: all ease-in 0.2s;
+}
+
+.content-box {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 6fr;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 4.5rem;
+}
+
+.graph-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/*NAVIGATION*/
+.nav {
+  max-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 20fr;
+  background-color: #bdbdbd;
+  z-index: 5;
+}
+.nav-title {
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-family: "Secular One";
+  color: #c81927;
+  justify-self: center;
+}
+
+.nav-list {
+  margin-top: 5rem;
+  max-width: 17rem;
+  justify-items: flex-start;
+  justify-self: center;
+}
+
+.nav-element {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.nav-link {
+  all: unset;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #c81927;
+  transition: all 0.3s;
+}
+
+/*HEADER*/
+.header {
+  min-height: 7rem;
+  margin: 0 0 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #e2e2e2;
+}
+
+.greeter {
+  font-family: "Ruda", sans-serif;
+  font-size: 2rem;
+  margin: 0 6rem 0 0;
+}
+
+/*INFO SECTION*/
+.info-section {
+  margin: 0 0 5rem 15rem;
+  z-index: 1;
+}
+.info-card {
+  max-width: 60rem;
+  max-height: 20rem;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  background-color: #fff;
+  border-radius: 7px;
+  filter: drop-shadow(0px 4px 3px #bfbfbf);
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+}
+
+.info-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.icon {
+  max-width: 6rem;
+}
+.info-text {
+  padding: 1rem;
+  gap: 0rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+.data {
+  font-family: "Ruda", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.description {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.data-medicine {
+  color: #7e1f47;
+}
+.data-pharmacy {
+  color: #1f477e;
+}
+.data-city {
+  color: #477e1f;
+}
