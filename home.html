@@ -16,7 +16,7 @@
   <body>
     <section class="home-container nav-passive-grid">
       <nav class="nav">
-        <p class="nav-title hidden">MEDIFIND</p>
+        <p class="nav-title">M<span class="nav-text hidden">EDIFIND</span></p>
         <ul class="nav-list">
           <a class="nav-link" href="#"
             ><li class="nav-element">
@@ -80,13 +80,21 @@
             </div>
           </div>
           <div class="graph-section">
-            <div class="chart"></div>
+            <div class="chart">
+              <canvas id="pieChart"></canvas>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+      integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -5,11 +5,16 @@
 }
 
 html {
-  font-size: 80%;
+  font-size: 62.5%;
 }
 
 body {
   background-color: #efefef;
+}
+
+canvas {
+  z-index: 1;
+  max-height: 45rem;
 }
 .active {
   display: block;
@@ -81,7 +86,7 @@ body {
   z-index: 5;
 }
 .nav-title {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 3rem;
   font-family: "Secular One";
   color: #c81927;
