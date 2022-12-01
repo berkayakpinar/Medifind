@@ -43,6 +43,7 @@
   width: 80rem;
   height: 35rem;
   overflow: auto;
+  margin-bottom: 3rem;
 }
 .pharmacy-list {
   list-style: none;
