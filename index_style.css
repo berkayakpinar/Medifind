@@ -5,11 +5,11 @@
 }
 
 html {
-  font-size: 80%;
+  font-size: 62.5%;
 }
 
 body {
-  background-color: #efefef;
+  background-color: #151929;
 }
 
 canvas {
@@ -27,12 +27,15 @@ canvas {
 }
 
 .overlay {
-  background-color: #ffffffbf;
   z-index: 2;
   position: fixed;
   height: 100vh;
   width: 100vw;
-  filter: blur(20px);
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  border-radius: 10px;
 }
 
 .nav-passive-grid {
@@ -80,45 +83,67 @@ canvas {
 }
 /*NAVIGATION*/
 .nav {
-  max-height: 100vh;
+  position: fixed;
+  width: 6rem;
+  min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr 20fr;
-  background-color: #bdbdbd;
+  background-color: #1c2438;
   z-index: 5;
+  transition: width 200ms ease;
 }
-.nav-title {
-  margin-top: 2rem;
-  font-size: 3rem;
-  font-family: "Secular One";
-  color: #c81927;
-  justify-self: center;
+
+.nav:hover {
+  width: 20rem;
+}
+
+.nav:hover .link-text {
+  display: block;
 }
 
 .nav-list {
-  margin-top: 5rem;
-  max-width: 17rem;
-  justify-items: flex-start;
-  justify-self: center;
-}
-
-.nav-element {
+  margin-top: 3rem;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
   list-style: none;
-  font-family: "Ruda", sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  margin-bottom: 3rem;
+  max-width: 17rem;
+  align-items: flex-start;
 }
 
 .nav-link {
-  all: unset;
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  height: 5rem;
+  color: #dadae4;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .nav-link:hover {
-  color: #c81927;
-  transition: all 0.3s;
+  color: #399a80;
+  transition: ease 0.3s;
+  background-color: #399a800d;
+}
+
+.nav-link svg {
+  min-width: 2.1rem;
+  max-width: 2.1rem;
+  margin: 0 1.5rem;
+}
+.link-text {
+  display: none;
+  margin-left: 1rem;
+  font-family: "Ruda", sans-serif;
+  font-size: 1.8rem;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: 33rem;
 }
 
 /*HEADER*/
@@ -128,19 +153,21 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #e2e2e2;
+  background-color: #151929;
 }
 
 .greeter {
   font-family: "Ruda", sans-serif;
   font-size: 2rem;
   margin: 0 6rem 0 0;
+  color: #dadae4;
 }
 
 /*INFO SECTION*/
 .info-section {
   margin: 0 0 5rem 15rem;
   z-index: 1;
+  color: #399a80;
 }
 .info-card {
   max-width: 60rem;
@@ -149,9 +176,8 @@ canvas {
   display: grid;
   grid-template-columns: 1fr 3fr;
 
-  background-color: #fff;
+  background-color: #1c2438;
   border-radius: 7px;
-  filter: drop-shadow(0px 4px 3px #bfbfbf);
 }
 
 .info-card:hover {
@@ -166,6 +192,8 @@ canvas {
 }
 .icon {
   max-width: 6rem;
+  filter: invert(47%) sepia(66%) saturate(328%) hue-rotate(113deg)
+    brightness(96%) contrast(97%);
 }
 .info-text {
   padding: 1rem;
@@ -175,24 +203,19 @@ canvas {
   grid-template-rows: 2fr 1fr;
 }
 
+.chart {
+  max-width: 42rem;
+  margin: 0 0 0 10rem;
+}
 .data {
   font-family: "Ruda", sans-serif;
   font-weight: 700;
   font-size: 4rem;
+  color: #dadae4;
 }
 
 .description {
   font-family: "Ruda", sans-serif;
   font-weight: 400;
   font-size: 2rem;
-}
-
-.data-medicine {
-  color: #7e1f47;
-}
-.data-pharmacy {
-  color: #1f477e;
-}
-.data-city {
-  color: #477e1f;
 }

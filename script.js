@@ -5,16 +5,12 @@ const nav = document.querySelector(".nav");
 const overlay = document.querySelector(".overlay");
 const ctx = document.getElementById("pieChart");
 
-const nav_open = function () {
-  homeContainer.classList.toggle("nav-active-grid");
+const blur = function () {
   overlay.classList.toggle("hidden");
-  for (let i = 0; i < 5; i++) {
-    navText[i].classList.toggle("hidden");
-  }
 };
 
-nav.addEventListener("click", nav_open);
-
+nav.addEventListener("mouseover", blur);
+nav.addEventListener("mouseout", blur);
 const data = {
   labels: ["Parol", "Mannitol", "Morfin", "Aspirin", "Kortizon", "Penisilin"],
   datasets: [
@@ -22,14 +18,14 @@ const data = {
       label: "My First Dataset",
       data: [300, 50, 100, 234, 122, 90],
       backgroundColor: [
-        "#2364aa",
-        "#3da5d9",
-        "#5fad56",
-        "#b1c149",
-        "#fed234",
-        "#fe6148",
+        "#65A099",
+        "#9B6D2C",
+        "#6162F3",
+        "#9F933E",
+        "#9B463E",
+        "#917564",
       ],
-      hoverOffset: 4,
+      hoverOffset: 7,
     },
   ],
 };
