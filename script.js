@@ -11,6 +11,8 @@ const blur = function () {
 
 nav.addEventListener("mouseover", blur);
 nav.addEventListener("mouseout", blur);
+
+/*CHART*/
 const data = {
   labels: ["Parol", "Mannitol", "Morfin", "Aspirin", "Kortizon", "Penisilin"],
   datasets: [

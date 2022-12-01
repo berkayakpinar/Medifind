@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="index_style.css" />
+    <link rel="stylesheet" href="pharmacy.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ruda:wght@400;500;600;700;800;900&family=Secular+One&family=Teko:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Home - Medifind</title>
+    <title>Pharmacy - Medifind</title>
   </head>
   <body>
     <section class="home-container">
@@ -110,43 +110,44 @@
       </nav>
       <div class="content-box">
         <div class="overlay hidden"></div>
+        <div class="add-modal hidden"></div>
+        <div class="delete-modal hidden"></div>
         <div class="header">
           <p class="greeter">Welcome Alp Giray</p>
         </div>
         <div class="main">
-          <div class="info-section">
-            <div class="info-card pharmacy">
-              <div class="info-image">
-                <img class="icon" src="img/pharmacy.png" alt="" />
-              </div>
-              <div class="info-text">
-                <p class="data data-pharmacy">4356</p>
-                <p class="description">medicines recorded</p>
-              </div>
-            </div>
-            <div class="info-card medicine">
-              <div class="info-image">
-                <img class="icon" src="img/medicine.png" alt="" />
-              </div>
-              <div class="info-text">
-                <p class="data data-medicine">91</p>
-                <p class="description">pharmacies registered</p>
-              </div>
-            </div>
-            <div class="info-card city">
-              <div class="info-image">
-                <img class="icon" src="img/cities.png" alt="" />
-              </div>
-              <div class="info-text">
-                <p class="data data-city">13</p>
-                <p class="description">cities</p>
-              </div>
-            </div>
+          <div class="search-section">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"
+              data-icon="house"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 600 500"
+              class="svg-inline--fa fa-house fa-w-12 fa-5x"
+            >
+              <g class="fa-group">
+                <path
+                  fill="currentColor"
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
+                />
+              </g>
+            </svg>
+            <input class="search-bar" type="text" placeholder="Search" />
           </div>
-          <div class="graph-section">
-            <div class="chart">
-              <canvas id="pieChart"></canvas>
-            </div>
+          <p class="text">Add new</p>
+          <div class="list-box">
+            <ul class="pharmacy-list">
+              <li class="list-element"></li>
+              <li class="list-element"></li>
+              <li class="list-element"></li>
+              <li class="list-element"></li>
+              <li class="list-element"></li>
+              <li class="list-element"></li>
+              <li class="list-element"></li>
+              <li class="list-element"></li>
+            </ul>
           </div>
         </div>
       </div>

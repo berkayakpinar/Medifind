@@ -1,0 +1,86 @@
+.main {
+  margin: 0 0 0 22rem;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.search-section {
+  margin-bottom: 3rem;
+  display: flex;
+  max-width: 80rem;
+}
+.search-section svg {
+  min-width: 3rem;
+  max-width: 3rem;
+  margin: 1rem 1rem 0 0;
+  filter: invert(1);
+}
+.search-bar {
+  all: unset;
+  width: 100%;
+  min-height: 2.5rem;
+  color: #dadae4;
+  border-bottom: 2px solid #399a80;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 2rem;
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+}
+
+.text {
+  width: fit-content;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: "Ruda", sans-serif;
+  font-weight: 700;
+  color: #dadae4;
+  cursor: pointer;
+}
+.text:hover {
+  color: #39957d;
+}
+.list-box {
+  width: 80rem;
+  height: 35rem;
+  overflow: auto;
+}
+.pharmacy-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.list-element {
+  background-color: #399a80;
+  width: 70rem;
+  height: 10rem;
+  border-radius: 9px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #399a8066;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid #ffffff2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #39957d;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border-radius: 10px;
+  border: 1px solid #ffffff2e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #43b899;
+}
