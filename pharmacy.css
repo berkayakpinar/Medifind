@@ -4,6 +4,68 @@
   display: flex;
   flex-direction: column;
 }
+
+.add-modal {
+  position: fixed;
+  margin: 7rem 0 0 25rem;
+  width: 80rem;
+  height: 50rem;
+  background: rgba(28, 36, 56, 1);
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.title {
+  width: fit-content;
+  font-family: "Ruda", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #dadae4;
+}
+
+.pharmacy-form {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.form {
+  all: unset;
+  width: 90%;
+  min-height: 2.5rem;
+  color: #dadae4;
+  border-bottom: 2px solid #399a80;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 2rem;
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+}
+.button-box {
+  display: flex;
+  gap: 2rem;
+  align-self: flex-end;
+  margin-top: 3rem;
+  margin-right: 7rem;
+}
+.button {
+  color: #dadae4;
+  border-radius: 9px;
+  padding: 1rem;
+  border: none;
+  font-size: 2rem;
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  background-color: #39957d;
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+.button:hover {
+  background-color: #206e59;
+}
+
 .search-section {
   margin-bottom: 3rem;
   display: flex;
@@ -15,7 +77,8 @@
   margin: 1rem 1rem 0 0;
   filter: invert(1);
 }
-.search-bar {
+
+.input {
   all: unset;
   width: 100%;
   min-height: 2.5rem;
@@ -53,10 +116,54 @@
   gap: 2rem;
 }
 .list-element {
-  background-color: #399a80;
+  display: grid;
+  background-color: #1c2438;
+  color: #dadae4;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-family: "Ruda", sans-serif;
   width: 70rem;
   height: 10rem;
   border-radius: 9px;
+}
+
+ul li .title {
+  padding: 1rem 0 0 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+ul li .adress {
+  padding: 0rem 0 0 1rem;
+  font-size: 1.5rem;
+  max-width: 55rem;
+}
+ul li .last-modified {
+  padding: 1rem 1rem 0rem 0rem;
+  font-size: 1.5rem;
+  max-width: 55rem;
+  justify-self: flex-end;
+
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+ul li .icon-box {
+  align-self: flex-end;
+  justify-self: flex-end;
+  display: flex;
+  gap: 1rem;
+  padding: 0rem 1rem 1rem 0rem;
+}
+
+ul li svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  cursor: pointer;
+}
+
+ul li svg:hover {
+  filter: invert(45%) sepia(92%) saturate(282%) hue-rotate(114deg)
+    brightness(92%) contrast(83%);
+  transition: all ease 0.3s;
 }
 
 ::-webkit-scrollbar {

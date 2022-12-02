@@ -110,7 +110,18 @@
       </nav>
       <div class="content-box">
         <div class="overlay hidden"></div>
-        <div class="add-modal hidden"></div>
+        <div class="add-modal hidden">
+          <form class="pharmacy-form" action="#">
+            <p class="title">Add New Pharmacy</p>
+            <input type="text" class="form name" placeholder="Pharmacy Name" />
+            <input type="text" class="form adress" placeholder="Adress" />
+            <input type="text" class="form city" placeholder="City" />
+            <div class="button-box">
+              <button class="button add">Add</button>
+              <button class="button back">Back</button>
+            </div>
+          </form>
+        </div>
         <div class="delete-modal hidden"></div>
         <div class="header">
           <p class="greeter">Welcome Alp Giray</p>
@@ -134,19 +145,216 @@
                 />
               </g>
             </svg>
-            <input class="search-bar" type="text" placeholder="Search" />
+            <input class="search-bar input" type="text" placeholder="Search" />
           </div>
           <p class="text">Add new</p>
           <div class="list-box">
             <ul class="pharmacy-list">
-              <li class="list-element"></li>
-              <li class="list-element"></li>
-              <li class="list-element"></li>
-              <li class="list-element"></li>
-              <li class="list-element"></li>
-              <li class="list-element"></li>
-              <li class="list-element"></li>
-              <li class="list-element"></li>
+              <li class="list-element">
+                <p class="title">Faruk Eczanesi</p>
+                <p class="last-modified">02.12.2022</p>
+                <p class="adress">Reşitpaşa mahallesi spor yolu no:38</p>
+                <div class="icon-box">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fad"
+                    data-icon="house"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 500"
+                    class="svg-inline--fa fa-house fa-w-12 fa-5x"
+                  >
+                    <g class="fa-group">
+                      <path
+                        fill="currentColor"
+                        d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fad"
+                    data-icon="house"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 500"
+                    class="svg-inline--fa fa-house fa-w-12 fa-5x"
+                  >
+                    <g class="fa-group">
+                      <path
+                        fill="currentColor"
+                        d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </li>
+              <li class="list-element">
+                <p class="title">Faruk Eczanesi</p>
+                <p class="last-modified">02.12.2022</p>
+                <p class="adress">Reşitpaşa mahallesi spor yolu no:38</p>
+                <div class="icon-box">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fad"
+                    data-icon="house"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 500"
+                    class="svg-inline--fa fa-house fa-w-12 fa-5x"
+                  >
+                    <g class="fa-group">
+                      <path
+                        fill="currentColor"
+                        d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fad"
+                    data-icon="house"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 500"
+                    class="svg-inline--fa fa-house fa-w-12 fa-5x"
+                  >
+                    <g class="fa-group">
+                      <path
+                        fill="currentColor"
+                        d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </li>
+              <li class="list-element">
+                <p class="title">Faruk Eczanesi</p>
+                <p class="last-modified">02.12.2022</p>
+                <p class="adress">Reşitpaşa mahallesi spor yolu no:38</p>
+                <div class="icon-box">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fad"
+                    data-icon="house"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 500"
+                    class="svg-inline--fa fa-house fa-w-12 fa-5x"
+                  >
+                    <g class="fa-group">
+                      <path
+                        fill="currentColor"
+                        d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fad"
+                    data-icon="house"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 500"
+                    class="svg-inline--fa fa-house fa-w-12 fa-5x"
+                  >
+                    <g class="fa-group">
+                      <path
+                        fill="currentColor"
+                        d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </li>
+              <li class="list-element">
+                <p class="title">Faruk Eczanesi</p>
+                <p class="last-modified">02.12.2022</p>
+                <p class="adress">Reşitpaşa mahallesi spor yolu no:38</p>
+                <div class="icon-box">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fad"
+                    data-icon="house"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 500"
+                    class="svg-inline--fa fa-house fa-w-12 fa-5x"
+                  >
+                    <g class="fa-group">
+                      <path
+                        fill="currentColor"
+                        d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fad"
+                    data-icon="house"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 500"
+                    class="svg-inline--fa fa-house fa-w-12 fa-5x"
+                  >
+                    <g class="fa-group">
+                      <path
+                        fill="currentColor"
+                        d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </li>
+              <li class="list-element">
+                <p class="title">Faruk Eczanesi</p>
+                <p class="last-modified">02.12.2022</p>
+                <p class="adress">Reşitpaşa mahallesi spor yolu no:38</p>
+                <div class="icon-box">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fad"
+                    data-icon="house"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 500"
+                    class="svg-inline--fa fa-house fa-w-12 fa-5x"
+                  >
+                    <g class="fa-group">
+                      <path
+                        fill="currentColor"
+                        d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fad"
+                    data-icon="house"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 500"
+                    class="svg-inline--fa fa-house fa-w-12 fa-5x"
+                  >
+                    <g class="fa-group">
+                      <path
+                        fill="currentColor"
+                        d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
